@@ -1,0 +1,53 @@
+Firma opracowuje program do zarządzania zasobami ludzkimi
+dla innej firmy. Rodzaje klas, które uwzględiono to:
+- pracownik fizyczny,
+- pracownik umysłowy,
+- kierownik,
+- członek zarządu,
+- praktykant.
+
+Poszczególne osoby charakteryzują się następującymi cechami:
+
+Pracownik fizyczny: imię, nazwisko, rok urodzenia, stawka godzinowa,
+liczba przepracowanych godzin, liczba nadgodzin, informację kto jest je-
+go kierownikiem, informacje o umiejętnościach danego pracownika (np.
+że jest spawaczem i ma uprawniania na wózek widłowy).
+
+Pracownik umysłowy: imię, nazwisko, rok urodzenia, pensja miesięczna
+(ryczałt), procent premii, informację kto jest jego kierownikiem, numer
+telefonu, numer pokoju.
+
+Kierownik: imię, nazwisko, rok urodzenia, pensja miesięczna (ryczałt),
+procent premii, kwota dodatku kierowniczego, numer telefonu, numer
+telefonu komórkowego, numer pokoju, nazwa działu którego jest kierownikiem.
+
+Członek zarządu: imię, nazwisko, rok urodzenia, pensja miesięczna (ry-
+czałt), informacje na temat kto jest jego asystentem, ile razy uczestni-
+czył w spotkaniach rady nadzorczej.
+
+Praktykant: imię, nazwisko, rok urodzenia, informacje na temat kto
+jest jego opiekunem, informację czy ma przyznane stypendium.
+
+
+Oprócz powyższych cech, każda klasa zawiera:
+- zestaw odpowiednich funkcji umożliwiający zmianę i odczyt odpowiednich pól
+- metodę zwracającą w postaci napisu pełną informację o danej osobie
+- metodę obliczającą pobory miesięczne danej osoby.
+
+Pensja dla poszczególnych typów osób jest obliczana w następujący sposób:
+
+Pracownik fizyczny:
+stawka godzinowa * liczba przepracowanych godzin + 1,5 * stawka godzinowa * liczba nadgodzin.
+
+Pracownik umysłowy:
+pensja miesięczna + procent premii * pensja miesięczna.
+
+Kierownik:
+pensja miesięczna + procent premii * pensja miesięczna + kwota dodatku kierowniczego.
+
+Członek zarządu:
+pensja miesięczna + liczba spotkań rady nadzorczej * kwota przyznana za uczestnictwo w spotkaniu rady nadzorczej.
+
+Praktykant:
+w zależności od tego czy praktykant ma przyznane stypendium, metoda będzie zwracać wartość zero lub kwotę stypendium,
+która dla każdego praktykanta jest taka sama.
